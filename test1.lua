@@ -2,7 +2,7 @@
 -- zf211211.1052
 
 N={1,2,3,4,5,6,7,8,9}
---N={1,2,3,4}
+N={1,2,3,4}
 compteur=0
 
 function print_N ()
@@ -46,7 +46,7 @@ for j=1,#N do
     for i=1,#N-1 do
         T=N[i+1]  N[i+1]=N[i]  N[i]=T
         print_N()
-        test_N ()
+--        test_N ()
     end
 end
 
