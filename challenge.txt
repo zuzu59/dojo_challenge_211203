@@ -1,0 +1,20 @@
+
+
+Le challenge est le suivant : vous devez trouver un nombre de neuf
+chiffres différents (sans le 0) qui respecte la donnée suivante [Le
+premier chiffre est le chiffre de gauche] :
+* le premier chiffre est divisible par 1 ;
+* le nombre formé par les deux premiers chiffres doit être divisible par 2 ;
+* le nombre formé par les trois premiers chiffres doit être divisible
+par 3 ;
+* le nombre formé par les quatre premiers chiffres doit être divisible
+par 4 ;
+* le nombre formé par les cinq premiers chiffres doit être divisible par 5 ;
+* le nombre formé par les six premiers chiffres doit être divisible par 6 ;
+* le nombre formé par les sept premiers chiffres doit être divisible par 7 ;
+* le nombre formé par les huit premiers chiffres doit être divisible par 8 ;
+* le nombre formé par les neuf premiers chiffres doit être divisible par 9.
+
+Vous pouvez valider votre réponse en m'envoyant un mail, avec la source
+de votre programme.
+
