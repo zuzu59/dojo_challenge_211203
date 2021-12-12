@@ -2,16 +2,15 @@
 -- approche force brute pour le générateur de nombres à digits uniques
 -- zf211212.1212
 
-num_min=123
-num_max=140
+num_min=12345678
+num_max=98765432
 compteur1=0
 compteur2=0
 
 function test_unique (N)
-    num_string=tostring(N)
     T={0,0,0,0,0,0,0,0,0}
-    for i=1,#num_string do
-        a=tonumber(string.sub(num_string, i,i))
+    for i=1,#N do
+        a=tonumber(string.sub(N, i,i))
         if a==0 then
             -- y'a un zéro dans le nombre
             return false
@@ -28,11 +27,10 @@ end
 
 function test_challenge (N)
     R=0
-    num_string=tostring(N)
 --    print("Challenge:",N)
-    for i=1,#num_string do
+    for i=1,#N do
         R=R+1
-        a=tonumber(string.sub(num_string, 1,i))
+        a=tonumber(string.sub(N, 1,i))
 --        print("a:",a,i)
         if a%i~=0 then
 --            print("false",i,R)
@@ -43,19 +41,18 @@ function test_challenge (N)
     return true
 end
 
-
 for i=num_min,num_max do
 --    print(i)
     -- inverse le nombre pour optimiser la recherche, incrémentation de gauche à droite au lieu de droite à gauche
-    n=tonumber(string.reverse(tostring(i)))
-    print(i,n)
+    n=string.reverse(tostring(i))
+--    print(i,n)
     if test_unique(n)==true then
-        print("Bon nombre unique:",n)
+--        print("Bon nombre unique:",n)
         compteur1=compteur1+1
-        -- if test_challenge(n) then
-        --     print("Bingooooooooooooooooooooooooooooooooooooooo !",n)
-        --     compteur2=compteur2+1
-        -- end
+        if test_challenge(n) then
+            print("Bingooooooooooooooooooooooooooooooooooooooo !",n)
+            compteur2=compteur2+1
+        end
     end
 end
 
