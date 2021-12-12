@@ -1,5 +1,7 @@
--- Test1 du challenge
--- zf211211.1052
+-- Test du challenge
+-- approche subtile de permutation des digits pour le générateur de nombres à digits uniques
+-- approche qui ne fonctionne pas, car je n'ai fait que la première permutation
+-- zf211211.1752
 
 N={1,2,3,4,5,6,7,8,9}
 N={1,2,3,4}
